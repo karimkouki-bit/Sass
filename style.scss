@@ -1,0 +1,170 @@
+$mainSize: 16px;
+$mainwidth: 100%; /*variables*/
+
+
+/*@import "normalize";*/ /*import file*/
+
+.upper{
+    text-transform: uppercase;
+}
+
+.color{
+    color: red;
+}
+
+@mixin bRadius($r) { /*mixin ... function with parametre*/
+    border-radius: $r;
+}
+
+.class1{
+    @extend .color; /*Extend*/
+    @include bRadius(10px);
+    font-size: $mainSize;
+    background-color: #eee;
+    width: $mainwidth / 3; /*math an operator*/
+    float: left;
+}
+.class2{
+    @extend .color;
+    @include bRadius(10px);
+    font-size: $mainSize - 4;
+    background-color: #eee;
+    width: $mainwidth / 3;
+    float: left;
+}
+
+.class3{
+    @extend .color;
+    @include bRadius(10px);
+    font-size: $mainSize;
+    background-color: #eee;
+    width: $mainwidth / 3;
+    float: left;
+}
+/*
+.parent{ // this is nesting
+    .class1{
+
+    }
+    .class2{
+
+    }
+    .class3{
+        
+    }
+}
+*/
+
+/*If Else Conditions*/
+
+$direction: ltr;
+$floatLeft: left;
+$floatRight: right;
+
+@if $direction == ltr {
+    $floatLeft: left;
+    $floatRight: right;
+}@else {
+    $floatLeft: right;
+    $floatRight: left;
+}
+/*For Loop*/
+
+@for $i from 6 through 10 {
+    .class#{$i}{
+        font-size: 20px + $i;
+    }
+}
+
+/*Create Simple Grid System*/
+
+@for $i from 4 through 10 {
+    .class#{$i}{
+        width: (100% / (12 / $i));
+        float: left;
+        padding: 10px;
+        background-color: #eee;
+        border: 1px solid #aaa;
+    }
+}
+
+/*Each*/
+
+$sociallist: facebook twitter youtube codepen instagram;
+
+@each $social in $sociallist {
+        .#{$social} {
+            background: url('images/image_#{$social}.png');
+        }
+}
+
+/*Each With Multiple Assignments*/
+
+@each $social, $color, $hover in 
+    (facebook, blue, black),
+    (twitter, green, purple),
+    (youtube, orange, red),
+    (codepen, grey, green),
+    (instagram, pink, blue) {
+        .icon-#{social} {
+            background: url('images/image_#{$social}.png');
+            color: $color;
+            border: 1px solid color;
+            &:hover{
+                background-color: $hover;
+            }
+        }
+    }
+
+    /* Each With Map*/
+
+    $myElement: (defp: 16px, enp: 18px, arp: 22px, cutup: 26px);
+
+    @each $element, $font in $myElement {
+        .#{$element}{
+            font-size: $font;
+        }
+    }
+
+    /* While Loop*/
+
+    $x: 12;
+
+    @while $x > 0 {
+        .col-#{$x} {
+            width: (100% / (12 / $x));
+        }
+        $x: $x - 1;
+    }
+
+    /*multiple extend*/
+
+ .elzero{
+     @extend .upper;
+ }
+
+/*function*/
+
+@function iconFont($ele){
+    $font: 16px;
+    $result: 0;
+
+    @if $ele > $font{
+        $result: 0;
+    } @else {
+        $result: 100px
+    }
+    @return $result;
+}
+
+.font1{
+    font-size: iconFont(5px);
+}
+
+.font2{
+    font-size: iconFont(10px);
+}
+
+.font3{
+    font-size: iconFont(20px);
+}

@@ -1,0 +1,284 @@
+/*variables*/
+/*@import "normalize";*/
+/*import file*/
+.upper, .elzero {
+  text-transform: uppercase;
+}
+
+.color, .class1, .class2, .class3 {
+  color: red;
+}
+
+.class1 {
+  /*Extend*/
+  /*mixin ... function with parametre*/
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #eee;
+  width: 33.33333%;
+  /*math an operator*/
+  float: left;
+}
+
+.class2 {
+  /*mixin ... function with parametre*/
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #eee;
+  width: 33.33333%;
+  float: left;
+}
+
+.class3 {
+  /*mixin ... function with parametre*/
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #eee;
+  width: 33.33333%;
+  float: left;
+}
+
+/*
+.parent{ // this is nesting
+    .class1{
+
+    }
+    .class2{
+
+    }
+    .class3{
+        
+    }
+}
+*/
+/*If Else Conditions*/
+/*For Loop*/
+.class6 {
+  font-size: 26px;
+}
+
+.class7 {
+  font-size: 27px;
+}
+
+.class8 {
+  font-size: 28px;
+}
+
+.class9 {
+  font-size: 29px;
+}
+
+.class10 {
+  font-size: 30px;
+}
+
+/*Create Simple Grid System*/
+.class4 {
+  width: 33.33333%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class5 {
+  width: 41.66667%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class6 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class7 {
+  width: 58.33333%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class8 {
+  width: 66.66667%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class9 {
+  width: 75%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+.class10 {
+  width: 83.33333%;
+  float: left;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+/*Each*/
+.facebook {
+  background: url("images/image_facebook.png");
+}
+
+.twitter {
+  background: url("images/image_twitter.png");
+}
+
+.youtube {
+  background: url("images/image_youtube.png");
+}
+
+.codepen {
+  background: url("images/image_codepen.png");
+}
+
+.instagram {
+  background: url("images/image_instagram.png");
+}
+
+/*Each With Multiple Assignments*/
+.icon-social {
+  background: url("images/image_facebook.png");
+  color: blue;
+  border: 1px solid color;
+}
+
+.icon-social:hover {
+  background-color: black;
+}
+
+.icon-social {
+  background: url("images/image_twitter.png");
+  color: green;
+  border: 1px solid color;
+}
+
+.icon-social:hover {
+  background-color: purple;
+}
+
+.icon-social {
+  background: url("images/image_youtube.png");
+  color: orange;
+  border: 1px solid color;
+}
+
+.icon-social:hover {
+  background-color: red;
+}
+
+.icon-social {
+  background: url("images/image_codepen.png");
+  color: grey;
+  border: 1px solid color;
+}
+
+.icon-social:hover {
+  background-color: green;
+}
+
+.icon-social {
+  background: url("images/image_instagram.png");
+  color: pink;
+  border: 1px solid color;
+}
+
+.icon-social:hover {
+  background-color: blue;
+}
+
+/* Each With Map*/
+.defp {
+  font-size: 16px;
+}
+
+.enp {
+  font-size: 18px;
+}
+
+.arp {
+  font-size: 22px;
+}
+
+.cutup {
+  font-size: 26px;
+}
+
+/* While Loop*/
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+/*multiple extend*/
+/*function*/
+.font1 {
+  font-size: 100px;
+}
+
+.font2 {
+  font-size: 100px;
+}
+
+.font3 {
+  font-size: 0;
+}
+/*# sourceMappingURL=style.css.map */
